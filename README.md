@@ -16,4 +16,5 @@ Báo cáo thống kê số người nhập thông tin vào trang giả mạo.
 
 - Làm dự án trên máy ảo ubuntu version 24.04.1 lts
 - Tấn công thử bằng máy ảo kali linux
-  --> tổng quan dự án học được cách bảo vệ an toàn cho một website nào đó 
+
+# tổng quan dự án học được cách bảo vệ an toàn cho một website nào đó 
